@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentList"
+        android:name="com.example.signin_signup_profile.fragment.FragmentStudentList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentInfo"
+        android:name="com.example.signin_signup_profile.fragment.FragmentStudentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="6" />
+</LinearLayout>
